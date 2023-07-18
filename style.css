@@ -1,0 +1,171 @@
+/* шапка сайта старт */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.categories {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Располагаем категории по центру */
+  flex-grow: 1; /* Растягиваем категории, чтобы занять доступное пространство */
+}
+
+.categories li {
+  margin-right: 20px;
+}
+
+.categories li:last-child {
+  margin-right: 0;
+}
+
+.categories a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-bar button {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #45a049;
+}
+
+/* шапка сайта конец */
+
+/* сайдбар сайта старт */
+
+main {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+.sidebar ul {
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar a {
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex; /* Используем Flexbox для размещения сайдбара и карточек */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Две колонки */
+  gap: 10px; /* Отступы между карточками */
+}
+
+.card {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.card p {
+  margin: 5px 0;
+}
+/* сайдбар сайта конец */
+
+/* Стили для навигации по страницам */
+.page-navigation {
+  display: flex; /* Расположение элементов в одной строке */
+  justify-content: center; /* Выравнивание элементов по центру */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.page-navigation a {
+  color: rgb(5, 5, 5);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.page-navigation a:hover {
+  text-decoration: underline;
+}
+
+/* footer start */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-nav {
+  margin-bottom: 10px;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+/* footer конец */
